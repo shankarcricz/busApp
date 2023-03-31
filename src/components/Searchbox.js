@@ -1,26 +1,16 @@
+import { Button } from "@mui/material";
+import {TextField} from "@mui/material";
 import React from "react";
 
 const Searchbox = () => {
     return (
-        <div className="container">
-            <form>
+        <div className="box">
             <div className="row">
-                <div className="col-3">
-                    <input type="text" className="form-control" placeholder="From" />
-                </div>
-                <div className="col-3">
-                    <input type="text" className="form-control" placeholder="To" />
-                </div>
-                <div className="col-3">
-                    <input type="date" className="form-control" />
-                </div>
-                <div className="col-3">
-                    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-                        Search
-                    </button>
-                </div>
+                <TextField className="col-3" id="From" label="From" variant="outlined" />
+                <TextField className="col-3" id="To" label="To" variant="outlined" />
+                <TextField className="col-3" type="date" id="Date"  variant="outlined" />
+                <Button className="col-3" variant="outlined">Search</Button>
             </div>
-        </form>
         </div>
     );
 }
