@@ -1,11 +1,7 @@
 import React from "react";
 import Searchbox from "./Searchbox";
 import '../Home.css'
-import Navbar from "./Navbar";
-import Carousel from "./Carousel";
-import ControlledCarousel from "./Carousel";
 import Card from "./Card";
-
 
 const Home = () => {
     return (
